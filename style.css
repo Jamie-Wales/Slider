@@ -1,0 +1,81 @@
+.slider {
+  position: relative;
+  height: 800px;
+  width: 70%;
+  padding: 0;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide-container {
+  height: 100%;
+  position: relative;
+  height: 100%;
+}
+
+.image {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  height: 100%;
+  transition: transform 250ms ease-in;
+  object-fit: cover;
+}
+
+.image li {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  object-fit: cover;
+}
+
+.buttons {
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 0;
+  padding: 10px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.left {
+  z-index: 5;
+}
+
+.right {
+  right: 0px;
+}
+
+.circle-nav {
+  display: flex;
+  position: relative;
+  right: 230px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.indicator {
+  border: 0;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  padding: 10px;
+  margin: 0 3px;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.indicator.current-slide {
+  background: rgba(0, 0, 0, 0.75);
+}
